@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text=" English Vocabulary"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:background="#0099FF"
+        android:gravity="left|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView    android:id="@+id/image"
+        android:layout_width="350dip"
+        android:layout_height="280dip"
+
+        android:src="@drawable/image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
+    <Button
+        android:id="@+id/button_learn"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="24dp"
+        android:text="LEARN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"/>
+    <Button
+        android:id="@+id/button_practice"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="10dp"
+        android:text="PRACTICE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_learn"/>
+    <Button
+        android:id="@+id/button_test"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="10dp"
+        android:text="TEST"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_practice"/>
+    <ImageView android:id="@+id/image2"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/image2"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test"
+        android:layout_marginLeft="152dp" android:layout_marginStart="152dp"/>
+    <ImageView android:id="@+id/image3"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/image3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test"
+        app:layout_constraintRight_toRightOf="@+id/image2"
+        />
+    <ImageView android:id="@+id/image4"
+        android:layout_width="0dp"
+        android:layout_height="70dip"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/image1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test"
+        app:layout_constraintRight_toRightOf="@+id/image2"
+        android:layout_marginEnd="76dp" android:layout_marginRight="76dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
